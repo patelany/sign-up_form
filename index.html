@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign up form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="split left">
+                <div class="picture">
+                    <img src="https://cdn.thespaces.com/wp-content/uploads/2020/01/Gymshark-hero-crop.jpg" alt="gym with neon sign that says sweat" />
+                </div>
+            </div>
+            <div class="split right">
+                <div class="text">
+                    <p>This is not a real online service! Create the best version of yourself starting today! </p>
+                    <p>Sign up <em>now</em> to get started.</p>
+                    <p class="bottom-text">You <em>know</em> you want to.</p>
+                </div>
+                <form action="#">
+                    <div class="form">
+                        <p class="form-title">Let's do this!</p>
+                        <div style="float:left; margin-left: 90px;" class="input">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name" id="first-name" required />
+                        </div>
+
+                        <div class="input">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name" id="last-name" required />
+                        </div>
+
+                        <div style="float:left; margin-left: 90px;" class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+
+                        <div class="input">
+                            <label for="tel">Phone number</label>
+                            <input type="text" name="tel" id="tel" minlength="9" maxlength="9"/>
+                        </div>
+
+                        <div style="float:left; margin-left: 90px;" class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required />
+                        </div>
+
+                        <div class="input">
+                            <label for="confirm-passowrd">Confirm password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required />
+                        </div>
+                    </div>
+                    <div clas="button"><button type="submit">Create Account</button></div>
+                </form>
+                <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
+            </div>
+        </div>
+    </body>
+</html>

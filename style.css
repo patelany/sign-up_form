@@ -1,0 +1,121 @@
+:root {
+    --color: rgb(120, 228, 240);
+    --txt: white;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--txt);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input, label {
+    display: block;
+}
+
+.main {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+}
+.picture {
+    position: relative;
+    margin-left: -250px;
+}
+/*split screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    margin: 0px;
+    padding: 0px;
+    left: 0;
+}
+
+.right {
+    right: 0;
+    background-color: black;
+}
+
+.form {
+    background: white;
+    background-color: rgba(120, 228, 240, 0.1);
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.text {
+    font-size: 25px;
+    text-align: center;
+    margin: 50px;
+    line-height: 1.2;
+}
+
+.bottom-text {
+    margin: 20px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+button {
+    background-color: black;
+    color: var(--color);
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: black;
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+    flex-flow: column;
+    text-align: center;
+}
+
+.form-title {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.input {
+    text-align: left;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 10px;
+    
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+    background-color: rgba(120, 228, 240, 0.1);
+    font-size: 15px;
+}
+
+a {
+    color: var(--color);
+    text-decoration: none;
+}
+
